@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net7.0/DebuggingLearning.ConsoleApp.dll",
+            "args": [
+                "MemoryLeakTask"
+            ],
+            "cwd": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net7.0",
+            "console": "internalConsole",
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            },
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
