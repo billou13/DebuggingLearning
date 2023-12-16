@@ -8,11 +8,11 @@ namespace DebuggingLearning.WebApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class CommandController : ControllerBase
+public class CommandsController : ControllerBase
 {
     private readonly ICommandService _commandService;
 
-    public CommandController(ICommandService commandService)
+    public CommandsController(ICommandService commandService)
     {
         _commandService = commandService;
     }

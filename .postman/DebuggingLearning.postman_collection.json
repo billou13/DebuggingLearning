@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "71f0307d-caa9-4949-9c42-1f86d2427415",
+		"name": "DebuggingLearning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Commands",
+			"item": [
+				{
+					"name": "GcCollect",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commandType\": \"GcCollect\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/commands",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"commands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GcWaitForPendingFinalizers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commandType\": \"GcWaitForPendingFinalizers\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/commands",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"commands"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "ExceptionTask",
+					"item": [
+						{
+							"name": "ExceptionTask - create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"{{ExceptionTaskId}}\",\r\n  \"taskType\": \"ExceptionTask\",\r\n  \"status\": \"Processing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseUrl}}/tasks",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExceptionTask - get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/tasks/{{ExceptionTaskId}}",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks",
+										"{{ExceptionTaskId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExceptionTask - delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/tasks/{{ExceptionTaskId}}",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks",
+										"{{ExceptionTaskId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MemoryLeakTask",
+					"item": [
+						{
+							"name": "MemoryLeakTask - create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": \"{{MemoryLeakTaskId}}\",\r\n  \"taskType\": \"MemoryLeakTask\",\r\n  \"status\": \"Processing\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BaseUrl}}/tasks",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExceptionTask - get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/tasks/{{MemoryLeakTaskId}}",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks",
+										"{{MemoryLeakTaskId}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ExceptionTask - delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/tasks/{{MemoryLeakTaskId}}",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"tasks",
+										"{{MemoryLeakTaskId}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/tasks",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
