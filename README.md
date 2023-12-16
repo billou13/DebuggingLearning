@@ -7,8 +7,9 @@
 - [BuggyBits](https://github.com/TessFerrandez/BuggyBits)
 
 ## Memory Dump
-- [Create memory dump on k8s](https://www.gokhan-gokalp.com/en/getting-memory-dump-of-net-applications-windows-linux-containers-on-kubernetes)
+- [About exceptions and capturing them with dumps](https://techcommunity.microsoft.com/t5/iis-support-blog/about-exceptions-and-capturing-them-with-dumps/ba-p/2234600)
 - [ProcDump](https://learn.microsoft.com/en-us/sysinternals/downloads/procdump)
+- [Create memory dump on k8s](https://www.gokhan-gokalp.com/en/getting-memory-dump-of-net-applications-windows-linux-containers-on-kubernetes)
 - [ProcDump for Linux](https://github.com/Sysinternals/ProcDump-for-Linux)
 
 ## Memory Leaks
