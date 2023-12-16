@@ -25,3 +25,13 @@ Accept-Language: en-US,en;q=0.5
 DELETE {{DebuggingLearning.WebApi_HostAddress}}/tasks/cd0362ae-b716-4919-9ae1-7fd06f3302be
 
 ###
+
+POST {{DebuggingLearning.WebApi_HostAddress}}/command
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+  "commandType": "GcCollect"
+}
+
+###
