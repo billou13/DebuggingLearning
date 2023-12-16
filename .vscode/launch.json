@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
+            "name": "Console (MemoryLeakTask)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build-console-app",
             "program": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net8.0/DebuggingLearning.ConsoleApp.dll",
             "args": [
                 "MemoryLeakTask"
@@ -18,9 +18,22 @@
             "stopAtEntry": false
         },
         {
-            "name": ".NET Core Attach",
+            "name": "Web API",
             "type": "coreclr",
-            "request": "attach"
+            "request": "launch",
+            "preLaunchTask": "build-web-api",
+            "program": "${workspaceFolder}/DebuggingLearning.WebApi/bin/Debug/net8.0/DebuggingLearning.WebApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DebuggingLearning.WebApi/bin/Debug/net8.0",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "%s/swagger"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
         }
     ]
 }

@@ -1,3 +1,4 @@
+using System.Threading;
 using System.Threading.Tasks;
 using DebuggingLearning.Tasks.Interfaces;
 using Microsoft.Extensions.Logging;
@@ -26,6 +27,7 @@ public class Application
             return;
         }
 
-        await task.RunAsync();
+        var cancelToken = new CancellationTokenSource();
+        await task.RunAsync(cancelToken.Token);
     }
 }

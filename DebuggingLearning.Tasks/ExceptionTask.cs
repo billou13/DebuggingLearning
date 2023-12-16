@@ -12,7 +12,7 @@ public class ExceptionTask : SingleTask<ExceptionTask, ExceptionTaskConfig>
     {
     }
 
-    protected override void Run()
+    protected override void Execute()
     {
         throw new System.NotImplementedException();
     }

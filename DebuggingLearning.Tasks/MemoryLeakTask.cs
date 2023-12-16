@@ -17,7 +17,7 @@ public class MemoryLeakTask : RecurringTask<MemoryLeakTask, MemoryLeakTaskConfig
     {
     }
 
-    protected override void Run()
+    protected override void Execute()
     {
         _logger.LogInformation($"adding {Configuration.GrowthSize:n0} items...");
         for (int i = 0; i < Configuration.GrowthSize; i++)
