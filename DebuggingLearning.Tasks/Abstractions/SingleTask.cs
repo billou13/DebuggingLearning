@@ -1,19 +1,19 @@
 using System.Threading.Tasks;
-using DebuggingLearning.ConsoleApp.Configuration.Abstractions;
-using DebuggingLearning.ConsoleApp.Tasks.Interfaces;
+using DebuggingLearning.Tasks.Configuration.Abstractions;
+using DebuggingLearning.Tasks.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace DebuggingLearning.ConsoleApp.Tasks.Abstractions;
+namespace DebuggingLearning.Tasks.Abstractions;
 
-public abstract class RecurringTask<TTask, TConfig> : ITask
+public abstract class SingleTask<TTask, TConfig> : ITask
     where TTask : ITask
-    where TConfig : RecurringTaskConfig
+    where TConfig : SingleTaskConfig
 {
     private readonly IConfiguration _configuration;
     protected readonly ILogger<TTask> _logger;
 
-    public RecurringTask(IConfiguration configuration, ILogger<TTask> logger)
+    public SingleTask(IConfiguration configuration, ILogger<TTask> logger)
     {
         _configuration = configuration;
         _logger = logger;
@@ -28,10 +28,7 @@ public abstract class RecurringTask<TTask, TConfig> : ITask
 
     public async Task RunAsync()
     {
-        while (true)
-        {
-            Run();
-            await Task.Delay(Configuration.DelayMs);
-        }
+        Run();
+        await Task.CompletedTask;
     }
 }

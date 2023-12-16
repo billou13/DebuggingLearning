@@ -6,11 +6,11 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net7.0/DebuggingLearning.ConsoleApp.dll",
+            "program": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net8.0/DebuggingLearning.ConsoleApp.dll",
             "args": [
                 "MemoryLeakTask"
             ],
-            "cwd": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net7.0",
+            "cwd": "${workspaceFolder}/DebuggingLearning.ConsoleApp/bin/Debug/net8.0",
             "console": "internalConsole",
             "env": {
                 "DOTNET_ENVIRONMENT": "Development"

@@ -1,7 +1,7 @@
-using DebuggingLearning.ConsoleApp.Tasks.Interfaces;
+using DebuggingLearning.Tasks.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DebuggingLearning.ConsoleApp.Tasks.Extensions;
+namespace DebuggingLearning.Tasks.Extensions;
 
 public static class ServiceCollectionExtensions
 {

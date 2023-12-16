@@ -1,6 +1,6 @@
 ﻿using System;
 using DebuggingLearning.ConsoleApp.Bootstrap;
-using DebuggingLearning.ConsoleApp.Tasks.Extensions;
+using DebuggingLearning.Tasks.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

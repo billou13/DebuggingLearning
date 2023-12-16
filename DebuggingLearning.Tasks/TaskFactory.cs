@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using DebuggingLearning.ConsoleApp.Tasks.Interfaces;
+using DebuggingLearning.Tasks.Interfaces;
 using Microsoft.Extensions.Logging;
 
-namespace DebuggingLearning.ConsoleApp.Tasks;
+namespace DebuggingLearning.Tasks;
 
 public class TaskFactory : ITaskFactory
 {

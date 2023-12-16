@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace DebuggingLearning.ConsoleApp.Tasks.Interfaces;
+namespace DebuggingLearning.Tasks.Interfaces;
 
 public interface ITask
 {

@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using DebuggingLearning.ConsoleApp.Configuration;
-using DebuggingLearning.ConsoleApp.Tasks.Abstractions;
+using DebuggingLearning.Tasks.Configuration;
+using DebuggingLearning.Tasks.Abstractions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace DebuggingLearning.ConsoleApp.Tasks;
+namespace DebuggingLearning.Tasks;
 
 public class MemoryLeakTask : RecurringTask<MemoryLeakTask, MemoryLeakTaskConfig>
 {

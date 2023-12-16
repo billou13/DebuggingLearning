@@ -1,4 +1,4 @@
-namespace DebuggingLearning.ConsoleApp.Configuration.Abstractions;
+namespace DebuggingLearning.Tasks.Configuration.Abstractions;
 
 public abstract class RecurringTaskConfig
 {
