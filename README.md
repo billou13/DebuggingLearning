@@ -1,5 +1,11 @@
 # Debugging Learning
 
+## Setup
+
+- [Setup locally](.docs/setup-locally.md)
+- [Setup with Docker Desktop](.docs/setup-docker-desktop.md)
+- [Setup on Kubernetes](.docs/setup-kubernetes.md.md)
+
 ## Special Thanks
 
 ### Tess Ferrandez
